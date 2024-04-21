@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "378068136353",
+    "firebase_url": "https://dorothy-591c0-default-rtdb.firebaseio.com",
+    "project_id": "dorothy-591c0",
+    "storage_bucket": "dorothy-591c0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:378068136353:android:0775091ae872260c47dbe0",
+        "android_client_info": {
+          "package_name": "com.company.dorothy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "378068136353-dm23q9bvtheufmcpboqp7i11bncobb75.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.company.dorothy",
+            "certificate_hash": "f37e60c677ba467e48ea421e4f0a7fd92420079d"
+          }
+        },
+        {
+          "client_id": "378068136353-iea3uq27ts6hqsfnu8p2usbedjq2h8i2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBVnyOFdnSAdE1qhYHeg8Xaolsqs7_dsTY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "378068136353-iea3uq27ts6hqsfnu8p2usbedjq2h8i2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">App-Dorothy</string>
+    <string name="Logar">Logar</string>
+    <string name="text_cadastro">Não tem uma conta? Clique aqui</string>
+    <string name="title_cadastro">Cadastre-se</string>
+    <string name="titulo_musica">Somewhere Over the Rainbow</string>
+    <string name="home">Home</string>
+    <string name="mapa">Mapa</string>
+    <string name="info">Info</string>
+    <string name="email">dorothy@dorothy.com</string>
+    <string name="app_dorothy">Dorothy</string>
+    <string name="menu_drawer_open">Drawer Open</string>
+    <string name="menu_drawer_close">Drawer Close</string>
+    <string name="ajuda">Precisod de ajuda, estou enviando minha localização</string>
+    <string name="teste">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </string>
+
+
+    <string-array name="genero">
+
+        <item>Selecione uma opção</item>
+        <item>Andrógeno</item>
+        <item>Bi-gênero</item>
+        <item>Gênero fluido</item>
+        <item>Homem Cisgênero</item>
+        <item>Homem Transgênero</item>
+        <item>Mulher Cisgênero</item>
+        <item>Mulher Transgênero</item>
+        <item>Não-Binário</item>
+        <item>Transgênero Não-Binário</item>
+        <item>Travesti</item>
+
+    </string-array>
+
+    <string-array name="orientacao">
+        <item>Selecione uma opção</item>
+        <item>Assexual</item>
+        <item>Bissexual</item>
+        <item>Homossexual</item>
+        <item>Heterossexual</item>
+        <item>Pansexual</item>
+
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

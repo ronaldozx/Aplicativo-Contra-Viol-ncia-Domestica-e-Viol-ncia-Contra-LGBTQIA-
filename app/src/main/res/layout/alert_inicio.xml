@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    >
+
+
+       <androidx.cardview.widget.CardView
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
+
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+
+               <TextView
+                   android:id="@+id/tv_fundo"
+                   android:layout_width="match_parent"
+                   android:layout_height="40dp"
+                   android:background="@drawable/retangulo_de_cima"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <ImageView
+                   android:id="@+id/ic_fechar_alerta"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginRight="5dp"
+                   android:src="@drawable/ic_close"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <androidx.appcompat.widget.AppCompatTextView
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="5dp"
+                   android:text="Aviso"
+                   android:textColor="@color/white"
+                   android:textSize="24sp"
+                   android:textStyle="bold"
+                   app:flow_horizontalAlign="center"
+                   app:layout_constraintEnd_toStartOf="@+id/ic_fechar_alerta"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+
+               <androidx.appcompat.widget.AppCompatButton
+                   android:id="@+id/btn_cadastrar_contato"
+                   android:layout_width="150dp"
+                   android:layout_height="50dp"
+                   android:layout_marginTop="64dp"
+                   android:background="@drawable/bg_button_white"
+                   android:text="Cadastrar Contato"
+                   app:circularflow_defaultRadius="@dimen/browser_actions_context_menu_max_width"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/tv_fundo">
+
+               </androidx.appcompat.widget.AppCompatButton>
+
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+
+       </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

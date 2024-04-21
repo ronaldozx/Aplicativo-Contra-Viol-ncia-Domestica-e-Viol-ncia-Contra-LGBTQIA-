@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background"
+        tools:context=".forms.FormCadastro2"
+        >
+
+
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edt_nome"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="15dp"
+            android:theme="@style/EditText"
+            android:hint="Nome"
+            android:textColorHint="#ffffff"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/edt_cpf"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:drawableEnd="@drawable/ic_pessoa"
+            ></androidx.appcompat.widget.AppCompatEditText>
+
+
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/edt_cpf"
+            android:inputType="number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:theme="@style/EditText"
+            android:hint="CPF"
+            android:textColorHint="#ffffff"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/edt_data_nascimento"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:drawableEnd="@drawable/ic_cpf"
+            app:mask="___.___.___-__"
+            app:maskCharacter="_"
+            app:maskStyle="completable"
+            ></com.santalu.maskara.widget.MaskEditText>
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edt_data_nascimento"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:contextClickable="false"
+            android:drawableEnd="@drawable/ic_calendar"
+            android:hint="Data de Nascimento"
+            android:textAlignment="viewStart"
+            android:textColor="@color/white"
+            android:textColorHint="#ffffff"
+            android:textSize="18dp"
+            android:focusable="false"
+            android:theme="@style/EditText"
+            app:layout_constraintBottom_toTopOf="@+id/edt_telefone"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"></androidx.appcompat.widget.AppCompatEditText>
+
+        <com.santalu.maskara.widget.MaskEditText
+            android:id="@+id/edt_telefone"
+            android:inputType="phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:theme="@style/EditText"
+            android:hint="Telefone"
+            android:textColorHint="#ffffff"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/btn_proximo"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:drawableEnd="@drawable/ic_baseline_call_24"
+            app:mask="(__) _____-____"
+            app:maskCharacter="_"
+            app:maskStyle="completable" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_voltar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_button_white"
+            android:text="Voltar"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/tv_tem_cadastro"
+            app:layout_constraintEnd_toStartOf="@+id/btn_proximo"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_proximo"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginBottom="20dp"
+            android:background="@drawable/bg_button_white"
+            android:text="Proximo"
+            android:textColor="@color/white"
+            app:layout_constraintBottom_toTopOf="@+id/tv_tem_cadastro"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintStart_toEndOf="@+id/btn_voltar" />
+
+        <TextView
+            android:id="@+id/tv_tem_cadastro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="20dp"
+            android:text="Ja possui Cadastro?"
+            android:textColor="@color/white"
+            android:textSize="20dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:visibility="invisible"></TextView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

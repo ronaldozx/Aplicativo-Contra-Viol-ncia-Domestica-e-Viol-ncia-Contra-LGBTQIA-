@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/card_view_bg"
+    android:backgroundTint="@color/white"
+    android:layout_height="wrap_content">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="5dp">
+
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:cardCornerRadius="15dp"
+                    android:layout_marginTop="5dp"
+
+                    >
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/bg_card_white"
+                            android:padding="10dp">
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tv_nomeContato"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:maxWidth="200dp"
+                                    android:hint="Nome"
+                                    android:textSize="18sp"
+                                    android:textColorHint="@color/black"
+                                    android:textStyle="bold"
+                                    android:layout_marginTop="10dp"
+                                    android:layout_marginLeft="10dp"
+                                    />
+
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tv_emailContato"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_below="@+id/tv_nomeContato"
+                                    android:maxWidth="200dp"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="5dp"
+                                    android:hint="Email"
+                                    android:textColorHint="@color/black" />
+                                <androidx.appcompat.widget.AppCompatTextView
+                                    android:id="@+id/tv_telefoneContato"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:maxWidth="200dp"
+                                    android:layout_below="@+id/tv_emailContato"
+                                    android:hint="Telefone"
+                                    android:textColorHint="@color/black"
+                                    android:layout_marginLeft="10dp"
+                                    android:layout_marginTop="5dp"
+                                    />
+                                <androidx.cardview.widget.CardView
+                                    android:id="@+id/containerContato"
+                                    android:layout_width="100dp"
+                                    android:layout_height="100dp"
+                                    android:maxWidth="200dp"
+                                    app:cardCornerRadius="50dp"
+                                    android:layout_alignParentRight="true"
+                                    android:background="@drawable/background">
+
+                                <ImageView
+                                    android:id="@+id/img_contato"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:maxHeight="100dp"
+                                    android:src="@drawable/circulo"></ImageView>
+                                </androidx.cardview.widget.CardView>
+
+
+                        </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+</androidx.core.widget.NestedScrollView>
